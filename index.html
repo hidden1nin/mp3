@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+
+  <title>MP3 Player</title>
+</head>
+<body>
+  <header></header>
+  <div id="idle"><img src="https://picsum.photos/200" alt=""></div>
+  <div class="container" id="container">
+    
+    <div class="left-panel">
+      <h2>Albums</h2>
+      <input type="text" name="search-song" placeholder="Search song..." value="" id="search-input"/>
+      <div id="album-list"></div>
+    </div>
+    <div class="right-panel">
+      <div class="header">
+        <h2>Songs</h2>
+      </div>
+      <div id="song-list"></div>
+    </div>
+  </div>
+  <div class="media-controls">
+    <div id="cover"></div>
+    <audio controls id="audio-player"></audio>
+    <button id="select-dir">📁</button>
+    <button id="random">🎱</button>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
